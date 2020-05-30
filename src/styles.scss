@@ -1,4 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 10px; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 10px;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.mat-grid-tile:nth-child(odd) .mat-figure {
+  justify-content: flex-start !important;
+  align-items: flex-start !important;
+}
+
+.mat-grid-tile:nth-child(even) .mat-figure {
+  justify-content: flex-end !important;
+  align-items: flex-start !important;
+}
